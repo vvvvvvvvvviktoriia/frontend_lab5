@@ -14,7 +14,7 @@ document.getElementById('myForm').addEventListener('submit', function (e) {
     const pib = document.getElementById('pib').value;
     if (!pibPattern.test(pib)) {
         valid = false;
-        document.getElementById('pibError').textContent = 'Невірний формат ПІБ';
+        document.getElementById('pibError').textContent = 'Неправильний формат ПІБ';
         document.getElementById('pib').classList.add('invalid');
     }
 
@@ -23,7 +23,7 @@ document.getElementById('myForm').addEventListener('submit', function (e) {
     const idCard = document.getElementById('idcard').value;
     if (!idPattern.test(idCard)) {
         valid = false;
-        document.getElementById('idcardError').textContent = 'Невірний формат ID-карти';
+        document.getElementById('idcardError').textContent = 'Неправильний формат ID-карти';
         document.getElementById('idcard').classList.add('invalid');
     }
 
@@ -32,7 +32,7 @@ document.getElementById('myForm').addEventListener('submit', function (e) {
     const faculty = document.getElementById('faculty').value;
     if (!facultyPattern.test(faculty)) {
         valid = false;
-        document.getElementById('facultyError').textContent = 'Невірний формат факультету';
+        document.getElementById('facultyError').textContent = 'Неправильний формат факультету';
         document.getElementById('faculty').classList.add('invalid');
     }
 
@@ -41,7 +41,7 @@ document.getElementById('myForm').addEventListener('submit', function (e) {
     const dob = document.getElementById('dob').value;
     if (!dobPattern.test(dob)) {
         valid = false;
-        document.getElementById('dobError').textContent = 'Невірний формат дати народження';
+        document.getElementById('dobError').textContent = 'Неправильний формат дати народження';
         document.getElementById('dob').classList.add('invalid');
     } else {
         const [day, month, year] = dob.split('.').map(Number);
@@ -49,7 +49,7 @@ document.getElementById('myForm').addEventListener('submit', function (e) {
 
         if (birthDate > currentDate || birthDate.getFullYear() !== year || birthDate.getMonth() !== month - 1 || birthDate.getDate() !== day) {
             valid = false;
-            document.getElementById('dobError').textContent = 'Невірна дата народження';
+            document.getElementById('dobError').textContent = 'Неправильна дата народження';
             document.getElementById('dob').classList.add('invalid');
         } else {
             const age = currentDate.getFullYear() - birthDate.getFullYear();
@@ -66,7 +66,7 @@ document.getElementById('myForm').addEventListener('submit', function (e) {
     const address = document.getElementById('address').value;
     if (!addressPattern.test(address)) {
         valid = false;
-        document.getElementById('addressError').textContent = 'Невірний формат адреси';
+        document.getElementById('addressError').textContent = 'Неправильний формат адреси';
         document.getElementById('address').classList.add('invalid');
     }
 
