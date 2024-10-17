@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+h2{
+    margin-top: 30px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+/* Стилі форми */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input.invalid {
+    border-color: red;
+    background-color: #ffe6e6;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #a9ebf9;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #3ed4f4;
+}
+
+.form-hint {
+    font-size: 12px;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Стилі таблиці */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#colorPicker {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+}
+
+
+

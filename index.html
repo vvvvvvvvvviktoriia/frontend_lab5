@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаб 5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Форма з перевіркою валідності та Таблиця 6x6</h1>
+
+<!-- Секція завдання 1: Форма -->
+<section>
+    <h2>Форма для заповнення</h2>
+    <form id="myForm">
+        <label for="pib">ПІБ:</label>
+        <input type="text" id="pib" name="pib" placeholder="ТТТТТТ Т.Т.">
+        <div id="pibError" class="error"></div>
+
+        <label for="idcard">ID-карта:</label>
+        <input type="text" id="idcard" name="idcard" placeholder="ТТ №ЧЧЧЧЧЧ">
+        <div id="idcardError" class="error"></div>
+
+        <label for="faculty">Факультет:</label>
+        <input type="text" id="faculty" name="faculty" placeholder="ТТТТ">
+        <div id="facultyError" class="error"></div>
+
+        <label for="dob">Дата народження:</label>
+        <input type="text" id="dob" name="dob" placeholder="ЧЧ.ЧЧ.ЧЧЧЧ">
+        <div id="dobError" class="error"></div>
+
+        <label for="address">Адреса:</label>
+        <input type="text" id="address" name="address" placeholder="м. ТТТТТТ">
+        <div id="addressError" class="error"></div>
+
+        <div class="form-hint">Т-текст, Ч-число</div>
+
+        <button type="submit">Підтвердити</button>
+    </form>
+</section>
+
+<!-- Секція завдання 2: Таблиця 6x6 -->
+<section>
+    <h2>Таблиця 6x6</h2>
+    <p>Наведіть на клітинку з цифрою 4 для випадкової зміни кольору, click для вибору кольору з палітри, double-click для зміни кольору побічної діагоналі.</p>
+
+    <table id="myTable"></table>
+
+    <label for="colorPicker">Для вибору кольору з палітри натисніть сюди:</label>
+    <input type="color" id="colorPicker" />
+
+</section>
+
+<script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
